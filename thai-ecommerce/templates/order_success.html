@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}สำเร็จ - ร้านค้าออนไลน์{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card text-center py-5">
+            <div class="card-body">
+                <div class="mb-4">
+                    <span style="font-size: 5rem;">✅</span>
+                </div>
+                <h1 class="display-4 text-success mb-3">การสั่งซื้อสำเร็จ!</h1>
+                <p class="lead mb-4">ขอบคุณสำหรับการสั่งซื้อสินค้า</p>
+                
+                <div class="alert alert-info">
+                    <h5 class="alert-heading">
+                        ℹ️ รายละเอียดการสั่งซื้อ
+                    </h5>
+                    <p class="mb-2">คำสั่งซื้อของคุณได้รับการยืนยันเรียบร้อยแล้ว</p>
+                    <p class="mb-0">เราจะดำเนินการจัดส่งสินค้าโดยเร็วที่สุด</p>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    🚚 การจัดส่ง
+                                </h6>
+                                <p class="card-text small mb-0">สินค้าจะจัดส่งภายใน 3-5 วันทำการ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    📞 ติดต่อเรา
+                                </h6>
+                                <p class="card-text small mb-0">โทร: 02-123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg me-2">
+                        🛍️ เลือกซื้อสินค้าต่อ
+                    </a>
+                    <a href="{{ url_for('cart') }}" class="btn btn-outline-secondary btn-lg">
+                        🛒 ตะกร้าสินค้า
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
