@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สำเร็จ - ร้านค้าออนไลน์</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                🏪 ร้านค้าออนไลน์
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            🏠 หน้าแรก
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            🛒 ตะกร้าสินค้า
+                            <span class="badge bg-danger" id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card text-center py-5">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <span style="font-size: 5rem;">✅</span>
+                        </div>
+                        <h1 class="display-4 text-success mb-3">การสั่งซื้อสำเร็จ!</h1>
+                        <p class="lead mb-4">ขอบคุณสำหรับการสั่งซื้อสินค้า</p>
+                        
+                        <div class="alert alert-info">
+                            <h5 class="alert-heading">
+                                ℹ️ รายละเอียดการสั่งซื้อ
+                            </h5>
+                            <p class="mb-2">คำสั่งซื้อของคุณได้รับการยืนยันเรียบร้อยแล้ว</p>
+                            <p class="mb-0">เราจะดำเนินการจัดส่งสินค้าโดยเร็วที่สุด</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="index.html" class="btn btn-primary btn-lg me-3">
+                                🏠 กลับไปเลือกสินค้า
+                            </a>
+                            <button class="btn btn-outline-secondary btn-lg" onclick="window.print()">
+                                🖨️ พิมพ์ใบเสร็จ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2026 ร้านค้าออนไลน์. สงวนลิขสิทธิ์</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/static-script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+        });
+    </script>
+</body>
+</html>
